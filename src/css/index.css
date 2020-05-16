@@ -1,10 +1,17 @@
 body {
-    margin: 0 auto;
+    margin: 0 ;
     background: rgba(128, 0, 128, 1);
 }
 a {
     color: white;
 }
+ul {
+    padding: 0;
+}
 a:hover {
     color: yellow;
+    text-decoration: none;
+}
+li {
+    list-style: none;
 }
