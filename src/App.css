@@ -1,12 +1,13 @@
 .no {
   height: 60px;
   line-height: 60px;
-  background-color: rgb(173, 2, 173);
+  background-color: rgb(110, 34, 110);
   margin-top: 20px;
   border-bottom: 0;
   border-radius: 5px;
   text-align: center;
   align-content: center;
   position: fixed;
+  position: relative;
   
 }

@@ -1,1 +1,1 @@
-export default  `[{"hashpath":"/first","item":"第一个"},{"hashpath":"/second","item":"第二个"}]`
+export default  `[{"hashpath":"/first","item":"ZRY"},{"hashpath":"/second","item":"第二个"}]`
