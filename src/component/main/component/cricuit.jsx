@@ -1,11 +1,10 @@
 import React, { Component} from "react";
-import {hot} from "react-hot-loader";
 import {Link} from "react-router-dom";
-import itemData from "../../../data/classify.js"
-class leftbody extends Component {
+import Cricuitdata from "../../../data/circuit/cricuit.js"
+class cricuit extends Component {
     constructor(props) {
         super(props);
-        let values = JSON.parse(itemData);
+        let values = JSON.parse(Cricuitdata);
         this.state = { 
             values:values,
             a_style : {
@@ -24,6 +23,13 @@ class leftbody extends Component {
         };
     }
 
+    li_slide(e) {
+        if (e.type == "mouseover")
+            e.currentTarget.style.left = "10px";
+        else
+            e.currentTarget.style.left = "0px";
+    }
+
     getElements(values) {
         if(!values){
             return null;
@@ -33,21 +39,15 @@ class leftbody extends Component {
         });
     }
 
+    
+
     addEle(value, index)  {
-         
         // 需要指定key 不重复，否则会报警告
     return <li key={index} style={this.state.li_style} onMouseOver={this.li_slide} onMouseOut={this.li_slide}>
                 <Link to={value.hashpath} style={this.state.a_style}>
-                    {value.classify}<span style={{float:"right"}}>></span>
+                    {value.item}<span style={{float:"right"}}>></span>
                 </Link>
             </li>;
-    }
-
-    li_slide(e) {
-        if (e.type == "mouseover")
-            e.currentTarget.style.left = "10px";
-        else
-            e.currentTarget.style.left = "0px";
     }
     render() {
         return(
@@ -57,4 +57,4 @@ class leftbody extends Component {
         )
     }
 }
-export default hot(module)(leftbody);
+export default cricuit

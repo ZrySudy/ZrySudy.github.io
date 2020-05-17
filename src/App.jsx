@@ -1,12 +1,13 @@
 // 这个是整体排版的文件模块
 
 import React, { Component} from "react";
-import ReactDOM from "react-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import {hot} from "react-hot-loader";
 import "./css/bootstrap.min.css"
 import { Container,Row,Col } from 'react-bootstrap';
 import Nav from "./component/nav/Nav.jsx"
 import Left from "./component/Left/Left.jsx" 
+import Main from "./component/main/main.jsx"
 const style_nav = {
   marginTop: "5px",
   paddingTop:"15px",
@@ -35,32 +36,33 @@ const style_left = {
 class App extends Component{
   render(){
     return(
-      <Container fluid>
-        {/* 导航栏 */}
-        <Row>
-          <Col xs={{span: 7,offset: 3}} className="nav" style={style_nav}>
-          </Col>
-        </Row>
-
-
-        <Row>
-          {/* 左侧 */}
-          <Col xs={{span: 2,offset: 1}}>
-            <Col xs={2} style={style_left} className="left">
-              123
+      <Router>
+        <Container fluid>
+          {/* 导航栏 */}
+          <Row>
+            <Col xs={{span: 7,offset: 3}} className="nav" style={style_nav}>
+              <Nav />
             </Col>
-          </Col>
-          {/* 中间 */}
-          <Col xs={7} className="main" style={style_main}>2 of 3 (wider)</Col>
-          {/* 右侧 */}
-          <Col xs={1}>3 of 3</Col>
-        </Row>
-      </Container>
+          </Row>
+
+
+          <Row>
+            {/* 左侧 */}
+            <Col xs={{span: 2,offset: 1}}>
+              <Col xs={2} style={style_left} className="left">
+                <Left />
+              </Col>
+            </Col>
+            {/* 中间 */}
+            <Col xs={7} className="main" style={style_main}>
+                <Main />
+            </Col>
+            {/* 右侧 */}
+            <Col xs={1}>3 of 3</Col>
+          </Row>
+        </Container>
+      </Router>
     );
-  }
-  componentDidMount() {
-    ReactDOM.render(<Nav />,document.querySelector(".nav"))
-    ReactDOM.render(<Left />,document.querySelector(".left"))
   }
 }
 export default hot(module)(App);

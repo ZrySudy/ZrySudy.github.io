@@ -1,0 +1,1 @@
+export default  `[{"hashpath":"/cricuit","classify":"电路","item":"Cricuit"},{"hashpath":"/artificial","classify":"模电","item":"Cricuit"},{"hashpath":"/digit","classify":"数电","item":"Cricuit"}]`
