@@ -6,6 +6,8 @@ import {hot} from "react-hot-loader";
 import "./css/bootstrap.min.css"
 import { Container,Row,Col } from 'react-bootstrap';
 import Nav from "./component/nav/Nav.jsx"
+import Nav_2 from "./component/nav/Nav_2.jsx"
+
 import Left from "./component/Left/Left.jsx" 
 import Main from "./component/main/main.jsx"
 const style_nav = {
@@ -17,11 +19,16 @@ const style_nav = {
   boxShadow: "0px 0px 15px white",
   backgroundColor:"rgb(110, 34, 110)",
 }
+const style_nav_2 = {
+  border: "2px solid rgb(173, 3, 173)",
+  borderBottom: "0px",
+  backgroundColor:"#A06EA0",
+}
+
 const style_main = {
   backgroundColor:"#FFFFFF",
   border: "2px solid rgb(173, 3, 173)",
   borderTop: "0px",
-  height:"1000px",
   boxShadow: "0px 0px 15px white",
 
 }
@@ -40,25 +47,28 @@ class App extends Component{
         <Container fluid>
           {/* 导航栏 */}
           <Row>
-            <Col xs={{span: 7,offset: 3}} className="nav" style={style_nav}>
+            <Col xs={12} sm={{span: 8,offset: 4}} md={{span: 7,offset: 3}} className="nav" style={style_nav}>
               <Nav />
             </Col>
           </Row>
 
+          <Row className="d-sm-none" style={style_nav_2}>
+            <Nav_2 />
+          </Row>
 
           <Row>
             {/* 左侧 */}
-            <Col xs={{span: 2,offset: 1}}>
-              <Col xs={2} style={style_left} className="left">
+            <Col  sm={{span: 3,offset: 1}} md={{span: 2,offset: 1}} className="d-none d-sm-block">
+              <Col  sm={3} md={2} style={style_left} className="left">
                 <Left />
               </Col>
             </Col>
             {/* 中间 */}
-            <Col xs={7} className="main" style={style_main}>
+            <Col xs={12} sm={8} md={7} className="main" style={style_main}>
                 <Main />
             </Col>
             {/* 右侧 */}
-            <Col xs={1}>3 of 3</Col>
+            <Col md={1} className="d-none d-md-block">3 of 3</Col>
           </Row>
         </Container>
       </Router>

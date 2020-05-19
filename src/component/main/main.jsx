@@ -8,6 +8,7 @@ import Classify from "../../data/classify.js"
 import Cricuitdata from "../../data/circuit/cricuit"
 
 import Init from "../../data/circuit/init.jsx"
+import Resistance from "../../data/circuit/Resistance.jsx"
 class main extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +19,7 @@ class main extends Component {
             values2:values2,
             //用来存储模板内容标签
             arrclass:[<Cricuit/>,2,3],
-            arrCricuit:[<Init/>,2,3],
+            arrCricuit:[<Init/>,<Resistance/>,3],
         };
     }
     //1.新增分类内的列表
