@@ -1,0 +1,28 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+@keyframes bodyMoveIn{
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 300px;
+    }
+}
+@keyframes bodyMoveOut{
+    0% {
+        margin-left: 300px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
