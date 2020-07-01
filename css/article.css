@@ -7,9 +7,14 @@ article {
 }
 .article_style {
     margin: 0 auto 20px;
-    width: 60%;
+    width: 1024px;
     background-color: white;
     padding-top: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .article_style {
+        width: 100%;
+    }
 }
 .article_style ul,li {
     margin: 0;
@@ -21,6 +26,20 @@ article {
     padding: 0 3%;
     border-right: 2px solid #d0d2d6;
 }
+
 .article_style li:last-of-type {
     border-right: 0;
+}
+@media screen and (max-width: 460px) {
+    .article_style li:nth-of-type(n+3) {
+        display: none;
+    }
+    .article_style li:nth-of-type(n+2) {
+        border-right: 0;
+    }
+}
+@media screen and (max-width: 360px) {
+    .article_style li {
+        display: none;
+    }
 }

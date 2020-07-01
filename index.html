@@ -56,16 +56,17 @@
     let divTyping = document.querySelector('.typewriter')
     let i = 0,
       timer = 0,
-      str = '道德是用来约束自己的而不是约束他人的——Will小破站'
+      str = 'Will小破站'
     function typing () {
       if (i <= str.length) {
         divTyping.innerHTML = str.slice(0, i++) + '_'
+        timer = setTimeout(typing, 400)
       }
       else {
-        divTyping.innerHTML = '_'//结束打字,移除 _ 光标
+        divTyping.innerHTML = 'Will小破站'//结束打字,移除 _ 光标
         i = 0;
+        clearTimeout(timer)
       }
-      timer = setTimeout(typing, 300)
     }
     typing()
 </script>

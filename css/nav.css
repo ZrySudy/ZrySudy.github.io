@@ -27,6 +27,7 @@ nav a span {
     transition: box-shadow .3s;
     color: white;
     text-align: center;
+    z-index: 999;
 }
 .nav:hover {
     /* Elnav.style.boxShadow="3px 0px 10px white" */
