@@ -75,12 +75,13 @@
 <link rel="stylesheet" href="/css/article.css">
 
 <article>
+  <div class="article_header"></div>
   
     <div class="article_style" >
         <h2><a href="/2020/07/01/css%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80/">css网页布局</a></h2>
         <ul>
           <li>创建日期:2020-07-01</li>
-          <li>更新日期:2020-07-01</li>
+          <li>更新日期:2020-07-12</li>
           
             <li>分类:css </li>
           
@@ -93,19 +94,32 @@
         <h2><a href="/2020/06/23/hello-world/">Hello World</a></h2>
         <ul>
           <li>创建日期:2020-06-23</li>
-          <li>更新日期:2020-07-01</li>
+          <li>更新日期:2020-07-12</li>
           
         </ul>
         <br>
-        <p>摘要</p>
+        <p>第一次搭建成功基于Hexo+GitHub的个人博客网站，默认的是landscape主题</p>
     </div>
   
+  <div>分页</div>
 </article> 
 
 
 
 
 
+
+<link rel="stylesheet" href="/css/footer.css">
+
+<footer>
+    <p>© 2020-<span></span></p>
+    <p>Powered by <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> | Theme <a href="#">will</a></p>
+</footer>
+<script type="text/javascript">
+    let d  = new Date();
+    let year = document.querySelector('footer p span')
+    year.innerHTML = d.getFullYear()    
+</script> 
 </body>
 </body>
 </html>

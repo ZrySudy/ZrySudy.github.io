@@ -1,6 +1,9 @@
 article {
     background-color: #F2F5FA;
 }
+.article_header {
+    height: 20px;
+}
 .article_style h2 {
     margin-top: 0px;
     text-align: center;
@@ -11,7 +14,12 @@ article {
     background-color: white;
     padding-top: 20px;
 }
-@media screen and (max-width: 1024px) {
+.article_style p {
+    border-top: 2px solid #D0D2D6;
+    padding: 20px ;
+    font-size: 14px;
+}
+@media screen and (max-width: 1040px) {
     .article_style {
         width: 100%;
     }

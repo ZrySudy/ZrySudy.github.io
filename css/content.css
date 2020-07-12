@@ -1,0 +1,32 @@
+.content {
+    margin: 0 auto;
+    width: 1024px;
+    background-color: white;
+}
+@media screen and (max-width: 1040px) {
+    .content {
+        width: 100%;
+    }
+}
+.content_header {
+    text-align: center;
+}
+.content_header p{
+    border-top: 2px solid #D0D2D6;
+    padding: 20px ;
+    font-size: 14px;
+}
+.content_header ul,li {
+    margin: 0;
+    padding: 0;
+}
+.content_header li {
+    float: left;
+    color: #78797B;
+    padding: 0 3%;
+    border-right: 2px solid #d0d2d6;
+}
+
+.content_header li:last-of-type {
+    border-right: 0;
+}
