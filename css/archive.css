@@ -1,0 +1,10 @@
+.archive {
+    margin: 0 auto;
+    width: 1024px;
+    background-color: white;
+}
+@media screen and (max-width: 1040px) {
+    .archive {
+        width: 100%;
+    }
+}

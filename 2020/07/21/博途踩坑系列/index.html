@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will小破站</title>
+    <!-- 初始化样式 -->
+    
+<link rel="stylesheet" href="/css/body.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <body><!-- 导航 -->
+
+<link rel="stylesheet" href="/css/nav.css">
+
+
+<link rel="stylesheet" href="/css/fonts.css">
+ 
+<nav>
+    <div class="nav">
+        <div class="photo">
+            <img src="/images/%E5%89%91%E6%9D%A5.png"> 
+        </div>
+        <p>Will</p>
+        <p>错了就是错了，补救过后还是错了</p>
+        <ul>
+            <li><a href="/">首页<br>-</a></li>
+            <li><a href="/archives">归档<br>4</a></li>
+            <li><a href="/categories">分类<br>3</a></li>
+            <li><a href="/tags">标签<br>4</a></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <a href="javascript:;"><span class="icon-menu"></span></a>
+        <a href="javascript:;"><span class="icon-cross" style="display: none;"></span></a>
+    </div>
+</nav>
+
+<script src="/js/menu.js"></script>
+ 
+ 
+
+
+
+
+
+    
+<link rel="stylesheet" href="/css/content.css">
+
+<div class="content">
+    <div class="content_header" >
+        <h2>博途踩坑系列</h2>
+        <ul>
+            <li>创建日期:2020-07-21</li>
+            <li>更新日期:2020-07-21</li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <h2 id="S7-plcsim仿真时没有项目问题"><a href="#S7-plcsim仿真时没有项目问题" class="headerlink" title="S7-plcsim仿真时没有项目问题"></a>S7-plcsim仿真时没有项目问题</h2><blockquote>
+<p>需要自己创建一个项目，不然没有</p>
+</blockquote>
+<hr>
+<h2 id="通过博途无法修改I、O点问题"><a href="#通过博途无法修改I、O点问题" class="headerlink" title="通过博途无法修改I、O点问题"></a>通过博途无法修改I、O点问题</h2><blockquote>
+<p>I点没办法修改的，只能强制<br>I点是要通过外部模块的I点扫描然后覆盖了DI输入影响，可以通过强制使I点为1<br>仿真的时候可以用M代替I<br>关于强制参考：<br>SIMATIC S7 S7-1200 可编程控制器 系统手册<br><a href="https://support.industry.siemens.com/cs/cn/zh/view/109741593" target="_blank" rel="noopener">https://support.industry.siemens.com/cs/cn/zh/view/109741593</a><br>1500页<br>15.13 监视和修改 CPU 中的值</p>
+</blockquote>
+<hr>
+<h2 id="仿真过后关闭仿真软件出现下位机错误问题"><a href="#仿真过后关闭仿真软件出现下位机错误问题" class="headerlink" title="仿真过后关闭仿真软件出现下位机错误问题"></a>仿真过后关闭仿真软件出现下位机错误问题</h2><blockquote>
+<p>给他改成离线模式</p>
+</blockquote>
+<hr>
+<h2 id="FC编程和FB编程的区别"><a href="#FC编程和FB编程的区别" class="headerlink" title="FC编程和FB编程的区别"></a>FC编程和FB编程的区别</h2><blockquote>
+<p>FC对数据没有存储能力，但是速度快<br>FB对数据有存储能力。</p>
+</blockquote>
+<hr>
+<h2 id="DB数据库的值修改后没响应问题"><a href="#DB数据库的值修改后没响应问题" class="headerlink" title="DB数据库的值修改后没响应问题"></a>DB数据库的值修改后没响应问题</h2><blockquote>
+<p>DB数据库的值在外部没有触发条件下才能更改，外部有触发条件，会跟随外部触发条件</p>
+</blockquote>
+
+</div> 
+
+
+<link rel="stylesheet" href="/css/footer.css">
+
+<footer>
+    <p>© 2020-<span></span></p>
+    <p>Powered by <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> | Theme <a href="#">will</a></p>
+</footer>
+<script type="text/javascript">
+    let d  = new Date();
+    let year = document.querySelector('footer p span')
+    year.innerHTML = d.getFullYear()    
+</script> 
+</body>
+</body>
+</html>
