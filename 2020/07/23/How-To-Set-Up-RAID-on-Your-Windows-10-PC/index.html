@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will小破站</title>
+    <!-- 初始化样式 -->
+    
+<link rel="stylesheet" href="/css/body.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <body><!-- 导航 -->
+
+<link rel="stylesheet" href="/css/nav.css">
+
+
+<link rel="stylesheet" href="/css/fonts.css">
+ 
+<nav>
+    <div class="nav">
+        <div class="photo">
+            <img src="/images/%E5%89%91%E6%9D%A5.png"> 
+        </div>
+        <p>Will</p>
+        <p>错了就是错了，补救过后还是错了</p>
+        <ul>
+            <li><a href="/">首页<br>-</a></li>
+            <li><a href="/archives">归档<br>8</a></li>
+            <li><a href="/categories">分类<br>4</a></li>
+            <li><a href="/tags">标签<br>5</a></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <a href="javascript:;"><span class="icon-menu"></span></a>
+        <a href="javascript:;"><span class="icon-cross" style="display: none;"></span></a>
+    </div>
+</nav>
+
+<script src="/js/menu.js"></script>
+ 
+ 
+
+
+
+
+
+    
+<link rel="stylesheet" href="/css/content.css">
+
+<div class="content">
+    <div class="content_header" >
+        <h2>How To Set Up RAID on Your Windows 10 PC</h2>
+        <ul>
+            <li>创建日期:2020-07-23</li>
+            <li>更新日期:2020-07-23</li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <h2 id="How-to-Set-Up-RAID-on-Your-Windows-10-PC"><a href="#How-to-Set-Up-RAID-on-Your-Windows-10-PC" class="headerlink" title="How to Set Up RAID on Your Windows 10 PC"></a>How to Set Up RAID on Your Windows 10 PC</h2><p>When it comes to storage for your PC, there’s no longer a one-size-fits-all solution. However, if you want to improve redundancy or increase efficiency then the need for a stable and secure RAID (redundant array of independent disks) setup still frequently comes up. Fortunately, getting a Windows 10 RAID system up and running is actually relatively simple.</p>
+<p>In this article, we’ll provide a primer on RAID systems, starting with some general information about what they are, how they work, and which configurations are most popular. We’ll also help you choose the right configuration for your situation and offer detailed instructions on how to set up two of the most popular options: RAID 5 and RAID 10 (sometimes known as RAID 1+0).</p>
+<h2 id="What-is-a-RAID-setup"><a href="#What-is-a-RAID-setup" class="headerlink" title="What is a RAID setup?"></a>What is a RAID setup?</h2><p>A RAID setup uses multiple storage drives to create a single workable storage system. This can help improve overall storage efficiency as well as protect against drive failure by incorporating backup drives. There are several different types, and how yours works depends on your specific RAID configuration.</p>
+<h2 id="RAID-array"><a href="#RAID-array" class="headerlink" title="RAID array"></a>RAID array</h2><p>RAID setups are commonly called arrays or configurations, with the type identified by a numeral. A RAID array is simply a collection of synced drives, while the type denotes how a particular configuration works.</p>
+<h2 id="Data-striping-and-mirroring"><a href="#Data-striping-and-mirroring" class="headerlink" title="Data striping and mirroring"></a>Data striping and mirroring</h2><p>Some rely on data striping, a process that spreads your information across multiple drives to improve efficiency and responsiveness. Another simple format involves data mirroring, which replicates stored information across multiple drives. Unlike striping, mirroring is used specifically to improve redundancy to help safeguard your data.</p>
+<h2 id="Parity"><a href="#Parity" class="headerlink" title="Parity"></a>Parity</h2><p>More complex Windows RAID systems incorporate multiple systems, with parity being another factor. Parity refers to error-checking code, and it can be dedicated (one drive) or distributed (multiple drives). Generally, configurations with parity are slower because the process increases the number of operations your system performs.</p>
+<h2 id="What-is-the-best-RAID-configuration"><a href="#What-is-the-best-RAID-configuration" class="headerlink" title="What is the best RAID configuration?"></a>What is the best RAID configuration?</h2><p>The simplest RAID configurations are designed to provide a solid foundation of basics. RAID 0 arrays allow for more efficient operation, but they also increase the risk of drive failure. RAID 1 systems build redundancy against potential malfunctions but limit efficiency. These are great setups to experiment with, particularly if your storage load isn’t too cumbersome. Ultimately, the best RAID configuration for you depends on your situation.</p>
+<p>RAID 5 and RAID 10 offer strong combinations of efficiency and redundancy, with many users favoring RAID 10 for pure performance. However, RAID 5 only requires 3 drives for striping and parity, while RAID 10 requires a minimum of 4 drives to properly set up mirrored striping. As a result, RAID 10 can also be more energy-intensive.</p>
+<h2 id="How-to-configure-a-RAID-5-drive-array"><a href="#How-to-configure-a-RAID-5-drive-array" class="headerlink" title="How to configure a RAID 5 drive array"></a>How to configure a RAID 5 drive array</h2><p>Since a RAID 5 configuration involves at least 3 drives, it offers the security of redundant drives and the additional efficiency that comes with data striping. Here’s how you’ll set everything up in Windows 10 once your hardware is ready:</p>
+<ol>
+<li>Open the Settings tab from the Window Start button in the lower-left corner of your display</li>
+<li>Select the System tab</li>
+<li>Select the Storage tab from the left sidebar</li>
+<li>Look for the More Storage Settings heading and select Manage Storage Spaces</li>
+<li>In the new window, select the “Create a new pool and storage space” option (Click Yes if prompted to approve changes to your system)</li>
+<li>Select the drives you want to pool and click Create pool. Together these drives will make up your RAID 5 array</li>
+<li>Enter the necessary information under the name and drive letter heading</li>
+<li>Under the Resiliency heading, click the resiliency type dropdown and select Parity</li>
+<li>Under the Size heading, enter your desired capacity and size settings</li>
+<li>Click the Create storage space button to activate the array<h2 id="How-RAID-10-works"><a href="#How-RAID-10-works" class="headerlink" title="How RAID 10 works"></a>How RAID 10 works</h2>RAID 10 is a nested RAID system. It’s designed to quickly recover lost information and offers an efficient, robust system for secure data storage. As a type, it relies on striping and mirroring at least two pairs of drives to form an array.</li>
+</ol>
+<p>To set up a RAID 10 configuration with Windows 10, you’ll follow many of the same steps as above. But you’ll actually be creating at least two RAID 1 stripes and tying them together, hence the alternative name for this setup (RAID 1+0). That’s why these configurations are typically called nested RAID systems.</p>
+<ol>
+<li>Open the Settings tab from the Window Start button in the lower-left corner of your display</li>
+<li>Select the System tab</li>
+<li>Select the Storage tab from the left sidebar</li>
+<li>Look for the More Storage Settings heading and select Manage Storage Spaces</li>
+<li>In the new window, select the “Create a new pool and storage space” option (Click Yes if prompted to approve changes to your system)</li>
+<li>From the drive selection menu, create two separate pools, each a pair of drives</li>
+<li>Select a pair of drives and click Create pool to set up your first mirror</li>
+<li>Enter the necessary information under the Name and Drive letter heading</li>
+<li>Under the resiliency heading, click the Resiliency type dropdown and select Two-way mirror</li>
+<li>Under the Size heading, enter your desired capacity and size settings</li>
+<li>Click the Create storage space button to activate your first mirrored drive pair</li>
+<li>Repeat the same steps to create a second mirrored drive pair, or for as many mirrored pairs as you plan to include in your array</li>
+<li>Now, visit the Windows Disk Management system by pressing the Windows + X keys at once</li>
+<li>Look toward the bottom of the window for more information on the two or more mirrored pairs you created, then right click the first pair and select Delete volume to clear out file systems</li>
+<li>Repeat step 10 for the second drive, or for however many other mirrored pairs you want to configure</li>
+<li>Right click one of the drive pairs you want in your array and select New Striped Volume</li>
+<li>In the new window, select the other mirrored pairs you want in your array and click Next</li>
+<li>Enter your preferred settings and click Next</li>
+<li>Review your choices and click Finish</li>
+</ol>
+<p>To wrap up, click through any prompts and wait for Windows to format the new volume. Your RAID 10 array should now be running.</p>
+<h2 id="Other-types-of-RAID-configuration"><a href="#Other-types-of-RAID-configuration" class="headerlink" title="Other types of RAID configuration"></a>Other types of RAID configuration</h2><p>There are lots of other RAID types still in use besides RAID 5 and 10, including RAID 0 and 1. There are even more beyond those as well, including a huge range of proprietary setups that require their own unique configurations. If you need more information, there is plenty of user-generated material on more niche RAID types.</p>
+<h2 id="Get-to-know-your-hardware"><a href="#Get-to-know-your-hardware" class="headerlink" title="Get to know your hardware"></a>Get to know your hardware</h2><p>Beyond properly configuring a RAID setup in Windows, it’s important to know your hardware and accessories. Research everything that goes into your physical storage arrangement, and consider mixing drives from different manufacturers.</p>
+<h2 id="Mix-it-up"><a href="#Mix-it-up" class="headerlink" title="Mix it up"></a>Mix it up</h2><p>What does that accomplish? A mixture can lower your overall risk of failure by removing the chance that both drives suffer from a batch fault. While it may seem cumbersome, especially with larger setups, it can be a way to hedge against certain issues.</p>
+<h2 id="In-conclusion"><a href="#In-conclusion" class="headerlink" title="In conclusion"></a>In conclusion</h2><p>Sometimes users require more than just a standard storage solution. If equipped and configured properly, RAID offers an easy way to add redundancy and speed to your system. Whether you’re most worried about data loss or just want a faster system, the right RAID setup can supplement your hardware and maintenance routine.</p>
+
+</div> 
+
+
+<link rel="stylesheet" href="/css/footer.css">
+
+<footer>
+    <p>© 2020-<span></span></p>
+    <p>Powered by <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> | Theme <a href="#">will</a></p>
+</footer>
+<script type="text/javascript">
+    let d  = new Date();
+    let year = document.querySelector('footer p span')
+    year.innerHTML = d.getFullYear()    
+</script> 
+</body>
+</body>
+</html>

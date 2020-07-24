@@ -30,3 +30,7 @@
 .content_header li:last-of-type {
     border-right: 0;
 }
+img {
+    width: 80%;
+    text-align: center;
+}
